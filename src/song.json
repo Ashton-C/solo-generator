@@ -1,0 +1,92 @@
+{
+    "bpm": 76,
+    "timeSig": "4/4",
+    "tracks": [
+        [
+
+            { "eventType": "note", "delta": 0, "duration": 480, "midinote": 57, "velocity": 90 },
+            { "eventType": "note", "delta": 480, "duration": 320, "midinote": 55, "velocity": 90 },
+            { "eventType": "note", "delta": 320, "duration": 160, "midinote": 52, "velocity": 90 }, 
+            { "eventType": "note", "delta": 160, "duration": 960, "midinote": 48, "velocity": 90 },
+
+
+            { "eventType": "note", "delta": 960, "duration": 480, "midinote": 50, "velocity": 90 },
+            { "eventType": "note", "delta": 480, "duration": 320, "midinote": 48, "velocity": 90 },
+            { "eventType": "note", "delta": 320, "duration": 160, "midinote": 45, "velocity": 90 },
+            { "eventType": "note", "delta": 160, "duration": 960, "midinote": 43, "velocity": 90 },
+
+
+            { "eventType": "note", "delta": 960, "duration": 480, "midinote": 47, "velocity": 90 },
+            { "eventType": "note", "delta": 480, "duration": 320, "midinote": 50, "velocity": 90 },
+            { "eventType": "note", "delta": 320, "duration": 160, "midinote": 54, "velocity": 90 },
+            { "eventType": "note", "delta": 160, "duration": 960, "midinote": 55, "velocity": 90 },
+
+
+            { "eventType": "note", "delta": 960, "duration": 480, "midinote": 55, "velocity": 90 },
+            { "eventType": "note", "delta": 480, "duration": 320, "midinote": 50, "velocity": 90 },
+            { "eventType": "note", "delta": 320, "duration": 160, "midinote": 48, "velocity": 90 }, 
+            { "eventType": "note", "delta": 160, "duration": 960, "midinote": 44, "velocity": 90 }, 
+
+
+            { "eventType": "note", "delta": 960, "duration": 480, "midinote": 52, "velocity": 90 }, 
+            { "eventType": "note", "delta": 480, "duration": 320, "midinote": 50, "velocity": 90 }, 
+            { "eventType": "note", "delta": 320, "duration": 160, "midinote": 47, "velocity": 90 }, 
+            { "eventType": "note", "delta": 160, "duration": 960, "midinote": 43, "velocity": 90 }, 
+
+
+            { "eventType": "note", "delta": 960, "duration": 480, "midinote": 44, "velocity": 90 }, 
+            { "eventType": "note", "delta": 480, "duration": 320, "midinote": 47, "velocity": 90 }, 
+            { "eventType": "note", "delta": 320, "duration": 160, "midinote": 50, "velocity": 90 }, 
+            { "eventType": "note", "delta": 160, "duration": 960, "midinote": 53, "velocity": 90 }, 
+
+
+            { "eventType": "note", "delta": 960, "duration": 480, "midinote": 57, "velocity": 90 }, 
+            { "eventType": "note", "delta": 480, "duration": 320, "midinote": 55, "velocity": 90 }, 
+            { "eventType": "note", "delta": 320, "duration": 160, "midinote": 52, "velocity": 90 }, 
+            { "eventType": "note", "delta": 160, "duration": 960, "midinote": 48, "velocity": 90 }, 
+
+
+            { "eventType": "note", "delta": 960, "duration": 480, "midinote": 54, "velocity": 90 }, 
+            { "eventType": "note", "delta": 480, "duration": 320, "midinote": 48, "velocity": 90 }, 
+            { "eventType": "note", "delta": 320, "duration": 160, "midinote": 45, "velocity": 90 }, 
+            { "eventType": "note", "delta": 160, "duration": 960, "midinote": 50, "velocity": 90 }, 
+
+
+            { "eventType": "note", "delta": 960, "duration": 1920, "midinote": 55, "velocity": 30 },
+
+
+            { "eventType": "note", "delta": 1920, "duration": 1920, "midinote": 49, "velocity": 30 }, 
+
+
+            { "eventType": "note", "delta": 1920, "duration": 1920, "midinote": 48, "velocity": 30 }, 
+
+
+            { "eventType": "note", "delta": 1920, "duration": 1920, "midinote": 53, "velocity": 30 }, 
+
+
+            { "eventType": "note", "delta": 1920, "duration": 480, "midinote": 47, "velocity": 90 }, 
+            { "eventType": "note", "delta": 480, "duration": 320, "midinote": 50, "velocity": 90 }, 
+            { "eventType": "note", "delta": 320, "duration": 160, "midinote": 54, "velocity": 90 }, 
+            { "eventType": "note", "delta": 160, "duration": 960, "midinote": 57, "velocity": 90 }, 
+
+
+            { "eventType": "note", "delta": 960, "duration": 480, "midinote": 56, "velocity": 90 }, 
+            { "eventType": "note", "delta": 480, "duration": 320, "midinote": 50, "velocity": 90 }, 
+            { "eventType": "note", "delta": 320, "duration": 160, "midinote": 47, "velocity": 90 }, 
+            { "eventType": "note", "delta": 160, "duration": 960, "midinote": 52, "velocity": 90 }, 
+
+
+            { "eventType": "note", "delta": 960, "duration": 480, "midinote": 48, "velocity": 90 },
+            { "eventType": "note", "delta": 480, "duration": 320, "midinote": 55, "velocity": 90 },
+            { "eventType": "note", "delta": 320, "duration": 160, "midinote": 52, "velocity": 90 }, 
+            { "eventType": "note", "delta": 160, "duration": 960, "midinote": 57, "velocity": 90 }, 
+
+
+            { "eventType": "note", "delta": 960, "duration": 320, "midinote": 57, "velocity": 90 },
+            { "eventType": "note", "delta": 320, "duration": 160, "midinote": 54, "velocity": 90 }, 
+            { "eventType": "note", "delta": 160, "duration": 320, "midinote": 49, "velocity": 90 }, 
+            { "eventType": "note", "delta": 320, "duration": 160, "midinote": 45, "velocity": 90 }  
+            
+        ]
+    ]
+}

@@ -1,0 +1,751 @@
+[
+    {
+      "MIDI note number": "127",
+      "Key number (Organ)": null,
+      "Key number (Piano)": null,
+      "Note names (English)": "G9",
+      "Frequency (Equal tuning at 440 Hz)": 12543.85
+    },
+    {
+      "MIDI note number": "126",
+      "Key number (Organ)": null,
+      "Key number (Piano)": null,
+      "Note names (English)": "F#9/Gb9",
+      "Frequency (Equal tuning at 440 Hz)": 11839.82
+    },
+    {
+      "MIDI note number": "125",
+      "Key number (Organ)": null,
+      "Key number (Piano)": null,
+      "Note names (English)": "F9",
+      "Frequency (Equal tuning at 440 Hz)": 11175.3
+    },
+    {
+      "MIDI note number": "124",
+      "Key number (Organ)": null,
+      "Key number (Piano)": null,
+      "Note names (English)": "E9",
+      "Frequency (Equal tuning at 440 Hz)": 10548.08
+    },
+    {
+      "MIDI note number": "123",
+      "Key number (Organ)": null,
+      "Key number (Piano)": null,
+      "Note names (English)": "D#9/Eb9",
+      "Frequency (Equal tuning at 440 Hz)": 9956.06
+    },
+    {
+      "MIDI note number": "122",
+      "Key number (Organ)": null,
+      "Key number (Piano)": null,
+      "Note names (English)": "D9",
+      "Frequency (Equal tuning at 440 Hz)": 9397.27
+    },
+    {
+      "MIDI note number": "121",
+      "Key number (Organ)": null,
+      "Key number (Piano)": null,
+      "Note names (English)": "C#9/Db9",
+      "Frequency (Equal tuning at 440 Hz)": 8869.84
+    },
+    {
+      "MIDI note number": "120",
+      "Key number (Organ)": null,
+      "Key number (Piano)": null,
+      "Note names (English)": "C9",
+      "Frequency (Equal tuning at 440 Hz)": 8372.02
+    },
+    {
+      "MIDI note number": "119",
+      "Key number (Organ)": null,
+      "Key number (Piano)": null,
+      "Note names (English)": "B8",
+      "Frequency (Equal tuning at 440 Hz)": 7902.13
+    },
+    {
+      "MIDI note number": "118",
+      "Key number (Organ)": null,
+      "Key number (Piano)": null,
+      "Note names (English)": "A#8/Bb8",
+      "Frequency (Equal tuning at 440 Hz)": 7458.62
+    },
+    {
+      "MIDI note number": "117",
+      "Key number (Organ)": null,
+      "Key number (Piano)": null,
+      "Note names (English)": "A8",
+      "Frequency (Equal tuning at 440 Hz)": 7040
+    },
+    {
+      "MIDI note number": "116",
+      "Key number (Organ)": null,
+      "Key number (Piano)": null,
+      "Note names (English)": "G#8/Ab8",
+      "Frequency (Equal tuning at 440 Hz)": 6644.88
+    },
+    {
+      "MIDI note number": "115",
+      "Key number (Organ)": null,
+      "Key number (Piano)": null,
+      "Note names (English)": "G8",
+      "Frequency (Equal tuning at 440 Hz)": 6271.93
+    },
+    {
+      "MIDI note number": "114",
+      "Key number (Organ)": null,
+      "Key number (Piano)": null,
+      "Note names (English)": "F#8/Gb8",
+      "Frequency (Equal tuning at 440 Hz)": 5919.91
+    },
+    {
+      "MIDI note number": "113",
+      "Key number (Organ)": null,
+      "Key number (Piano)": null,
+      "Note names (English)": "F8",
+      "Frequency (Equal tuning at 440 Hz)": 5587.65
+    },
+    {
+      "MIDI note number": "112",
+      "Key number (Organ)": null,
+      "Key number (Piano)": null,
+      "Note names (English)": "E8",
+      "Frequency (Equal tuning at 440 Hz)": 5274.04
+    },
+    {
+      "MIDI note number": "111",
+      "Key number (Organ)": null,
+      "Key number (Piano)": null,
+      "Note names (English)": "D#8/Eb8",
+      "Frequency (Equal tuning at 440 Hz)": 4978.03
+    },
+    {
+      "MIDI note number": "110",
+      "Key number (Organ)": null,
+      "Key number (Piano)": null,
+      "Note names (English)": "D8",
+      "Frequency (Equal tuning at 440 Hz)": 4698.64
+    },
+    {
+      "MIDI note number": "109",
+      "Key number (Organ)": null,
+      "Key number (Piano)": null,
+      "Note names (English)": "C#8/Db8",
+      "Frequency (Equal tuning at 440 Hz)": 4434.92
+    },
+    {
+      "MIDI note number": "108",
+      "Key number (Organ)": null,
+      "Key number (Piano)": 88,
+      "Note names (English)": "C8",
+      "Frequency (Equal tuning at 440 Hz)": 4186.01
+    },
+    {
+      "MIDI note number": "107",
+      "Key number (Organ)": null,
+      "Key number (Piano)": 87,
+      "Note names (English)": "B7",
+      "Frequency (Equal tuning at 440 Hz)": 3951.07
+    },
+    {
+      "MIDI note number": "106",
+      "Key number (Organ)": null,
+      "Key number (Piano)": 86,
+      "Note names (English)": "A#7/Bb7",
+      "Frequency (Equal tuning at 440 Hz)": 3729.31
+    },
+    {
+      "MIDI note number": "105",
+      "Key number (Organ)": null,
+      "Key number (Piano)": 85,
+      "Note names (English)": "A7",
+      "Frequency (Equal tuning at 440 Hz)": 3520
+    },
+    {
+      "MIDI note number": "104",
+      "Key number (Organ)": null,
+      "Key number (Piano)": 84,
+      "Note names (English)": "G#7/Ab7",
+      "Frequency (Equal tuning at 440 Hz)": 3322.44
+    },
+    {
+      "MIDI note number": "103",
+      "Key number (Organ)": null,
+      "Key number (Piano)": 83,
+      "Note names (English)": "G7",
+      "Frequency (Equal tuning at 440 Hz)": 3135.96
+    },
+    {
+      "MIDI note number": "102",
+      "Key number (Organ)": null,
+      "Key number (Piano)": 82, 
+      "Note names (English)": "F#7/Gb7",
+      "Frequency (Equal tuning at 440 Hz)": 2959.96
+    },
+    {
+      "MIDI note number": "101",
+      "Key number (Organ)": null,
+      "Key number (Piano)": 81,
+      "Note names (English)": "F7",
+      "Frequency (Equal tuning at 440 Hz)": 2793.83
+    },
+    {
+      "MIDI note number": "100",
+      "Key number (Organ)": null,
+      "Key number (Piano)": 80,
+      "Note names (English)": "E7",
+      "Frequency (Equal tuning at 440 Hz)": 2637.02
+    },
+    {
+      "MIDI note number": "99",
+      "Key number (Organ)": null,
+      "Key number (Piano)": 79,
+      "Note names (English)": "D#7/Eb7",
+      "Frequency (Equal tuning at 440 Hz)": 2489.02
+    },
+    {
+      "MIDI note number": "98",
+      "Key number (Organ)": null,
+      "Key number (Piano)": 78,
+      "Note names (English)": "D7",
+      "Frequency (Equal tuning at 440 Hz)": 2349.32
+    },
+    {
+      "MIDI note number": "97",
+      "Key number (Organ)": null,
+      "Key number (Piano)": 77,
+      "Note names (English)": "C#7/Db7",
+      "Frequency (Equal tuning at 440 Hz)": 2217.46
+    },
+    {
+      "MIDI note number": "96",
+      "Key number (Organ)": 61,
+      "Key number (Piano)": 76,
+      "Note names (English)": "C7",
+      "Frequency (Equal tuning at 440 Hz)": 2093
+    },
+    {
+      "MIDI note number": "95",
+      "Key number (Organ)": 60,
+      "Key number (Piano)": 75,
+      "Note names (English)": "B6",
+      "Frequency (Equal tuning at 440 Hz)": 1975.53
+    },
+    {
+      "MIDI note number": "94",
+      "Key number (Organ)": 59,
+      "Key number (Piano)": 74,
+      "Note names (English)": "A#6/Bb6",
+      "Frequency (Equal tuning at 440 Hz)": 1864.66
+    },
+    {
+      "MIDI note number": "93",
+      "Key number (Organ)": 58,
+      "Key number (Piano)": 73,
+      "Note names (English)": "A6",
+      "Frequency (Equal tuning at 440 Hz)": 1760
+    },
+    {
+      "MIDI note number": "92",
+      "Key number (Organ)": 57,
+      "Key number (Piano)": 72,
+      "Note names (English)": "G#6/Ab6",
+      "Frequency (Equal tuning at 440 Hz)": 1661.22
+    },
+    {
+      "MIDI note number": "91",
+      "Key number (Organ)": 56,
+      "Key number (Piano)": 71,
+      "Note names (English)": "G6",
+      "Frequency (Equal tuning at 440 Hz)": 1567.98
+    },
+    {
+      "MIDI note number": "90",
+      "Key number (Organ)": 55,
+      "Key number (Piano)": 70,
+      "Note names (English)": "F#6/Gb6",
+      "Frequency (Equal tuning at 440 Hz)": 1479.98
+    },
+    {
+      "MIDI note number": "89",
+      "Key number (Organ)": 54,
+      "Key number (Piano)": 69,
+      "Note names (English)": "F6",
+      "Frequency (Equal tuning at 440 Hz)": 1396.91
+    },
+    {
+      "MIDI note number": "88",
+      "Key number (Organ)": 53,
+      "Key number (Piano)": 68,
+      "Note names (English)": "E6",
+      "Frequency (Equal tuning at 440 Hz)": 1318.51
+    },
+    {
+      "MIDI note number": "87",
+      "Key number (Organ)": 52,
+      "Key number (Piano)": 67,
+      "Note names (English)": "D#6/Eb6",
+      "Frequency (Equal tuning at 440 Hz)": 1244.51
+    },
+    {
+      "MIDI note number": "86",
+      "Key number (Organ)": 51,
+      "Key number (Piano)": 66,
+      "Note names (English)": "D6",
+      "Frequency (Equal tuning at 440 Hz)": 1174.66
+    },
+    {
+      "MIDI note number": "85",
+      "Key number (Organ)": 50,
+      "Key number (Piano)": 65,
+      "Note names (English)": "C#6/Db6",
+      "Frequency (Equal tuning at 440 Hz)": 1108.73
+    },
+    {
+      "MIDI note number": "84",
+      "Key number (Organ)": 49,
+      "Key number (Piano)": 64,
+      "Note names (English)": "C6",
+      "Frequency (Equal tuning at 440 Hz)": 1046.5
+    },
+    {
+      "MIDI note number": "83",
+      "Key number (Organ)": 48,
+      "Key number (Piano)": 63,
+      "Note names (English)": "B5",
+      "Frequency (Equal tuning at 440 Hz)": 987.77
+    },
+    {
+      "MIDI note number": "82",
+      "Key number (Organ)": 47,
+      "Key number (Piano)": 62,
+      "Note names (English)": "A#5/Bb5",
+      "Frequency (Equal tuning at 440 Hz)": 932.33
+    },
+    {
+      "MIDI note number": "81",
+      "Key number (Organ)": 46,
+      "Key number (Piano)": 61,
+      "Note names (English)": "A5",
+      "Frequency (Equal tuning at 440 Hz)": 880
+    },
+    {
+      "MIDI note number": "80",
+      "Key number (Organ)": 45,
+      "Key number (Piano)": 60,
+      "Note names (English)": "G#5/Ab5",
+      "Frequency (Equal tuning at 440 Hz)": 830.61
+    },
+    {
+      "MIDI note number": "79",
+      "Key number (Organ)": 44,
+      "Key number (Piano)": 59,
+      "Note names (English)": "G5",
+      "Frequency (Equal tuning at 440 Hz)": 783.99
+    },
+    {
+      "MIDI note number": "78",
+      "Key number (Organ)": 43,
+      "Key number (Piano)": 58,
+      "Note names (English)": "F#5/Gb5",
+      "Frequency (Equal tuning at 440 Hz)": 739.99
+    },
+    {
+      "MIDI note number": "77",
+      "Key number (Organ)": 42,
+      "Key number (Piano)": 57,
+      "Note names (English)": "F5",
+      "Frequency (Equal tuning at 440 Hz)": 698.46
+    },
+    {
+      "MIDI note number": "76",
+      "Key number (Organ)": 41,
+      "Key number (Piano)": 56,
+      "Note names (English)": "E5",
+      "Frequency (Equal tuning at 440 Hz)": 659.26
+    },
+    {
+      "MIDI note number": "75",
+      "Key number (Organ)": 40,
+      "Key number (Piano)": 55,
+      "Note names (English)": "D#5/Eb5",
+      "Frequency (Equal tuning at 440 Hz)": 622.25
+    },
+    {
+      "MIDI note number": "74",
+      "Key number (Organ)": 39,
+      "Key number (Piano)": 54,
+      "Note names (English)": "D5",
+      "Frequency (Equal tuning at 440 Hz)": 587.33
+    },
+    {
+      "MIDI note number": "73",
+      "Key number (Organ)": 38,
+      "Key number (Piano)": 53,
+      "Note names (English)": "C#5/Db5",
+      "Frequency (Equal tuning at 440 Hz)": 554.37
+    },
+    {
+      "MIDI note number": "72",
+      "Key number (Organ)": 37,
+      "Key number (Piano)": 52,
+      "Note names (English)": "C5",
+      "Frequency (Equal tuning at 440 Hz)": 523.25
+    },
+    {
+      "MIDI note number": "71",
+      "Key number (Organ)": 36,
+      "Key number (Piano)": 51,
+      "Note names (English)": "B4",
+      "Frequency (Equal tuning at 440 Hz)": 493.88
+    },
+    {
+      "MIDI note number": "70",
+      "Key number (Organ)": 35,
+      "Key number (Piano)": 50,
+      "Note names (English)": "A#4/Bb4",
+      "Frequency (Equal tuning at 440 Hz)": 466.16
+    },
+    {
+      "MIDI note number": "69",
+      "Key number (Organ)": 34,
+      "Key number (Piano)": 49,
+      "Note names (English)": "A4 concert pitch",
+      "Frequency (Equal tuning at 440 Hz)": 440
+    },
+    {
+      "MIDI note number": "68",
+      "Key number (Organ)": 33,
+      "Key number (Piano)": 48,
+      "Note names (English)": "G#4/Ab4",
+      "Frequency (Equal tuning at 440 Hz)": 415.3
+    },
+    {
+      "MIDI note number": "67",
+      "Key number (Organ)": 32,
+      "Key number (Piano)": 47,
+      "Note names (English)": "G4",
+      "Frequency (Equal tuning at 440 Hz)": 392
+    },
+    {
+      "MIDI note number": "66",
+      "Key number (Organ)": 31,
+      "Key number (Piano)": 46,
+      "Note names (English)": "F#4/Gb4",
+      "Frequency (Equal tuning at 440 Hz)": 369.99
+    },
+    {
+      "MIDI note number": "65",
+      "Key number (Organ)": 30,
+      "Key number (Piano)": 45,
+      "Note names (English)": "F4",
+      "Frequency (Equal tuning at 440 Hz)": 349.23
+    },
+    {
+      "MIDI note number": "64",
+      "Key number (Organ)": 29,
+      "Key number (Piano)": 44,
+      "Note names (English)": "E4",
+      "Frequency (Equal tuning at 440 Hz)": 329.63
+    },
+    {
+      "MIDI note number": "63",
+      "Key number (Organ)": 28,
+      "Key number (Piano)": 43,
+      "Note names (English)": "D#4/Eb4",
+      "Frequency (Equal tuning at 440 Hz)": 311.13
+    },
+    {
+      "MIDI note number": "62",
+      "Key number (Organ)": 27,
+      "Key number (Piano)": 42,
+      "Note names (English)": "D4",
+      "Frequency (Equal tuning at 440 Hz)": 293.66
+    },
+    {
+      "MIDI note number": "61",
+      "Key number (Organ)": 26,
+      "Key number (Piano)": 41,
+      "Note names (English)": "C#4/Db4",
+      "Frequency (Equal tuning at 440 Hz)": 277.18
+    },
+    {
+      "MIDI note number": "60",
+      "Key number (Organ)": 25,
+      "Key number (Piano)": 40,
+      "Note names (English)": "C4 (middle C)",
+      "Frequency (Equal tuning at 440 Hz)": 261.63
+    },
+    {
+      "MIDI note number": "59",
+      "Key number (Organ)": 24,
+      "Key number (Piano)": 39,
+      "Note names (English)": "B3",
+      "Frequency (Equal tuning at 440 Hz)": 246.94
+    },
+    {
+      "MIDI note number": "58",
+      "Key number (Organ)": 23,
+      "Key number (Piano)": 38,
+      "Note names (English)": "A#3/Bb3",
+      "Frequency (Equal tuning at 440 Hz)": 233.08
+    },
+    {
+      "MIDI note number": "57",
+      "Key number (Organ)": 22,
+      "Key number (Piano)": 37,
+      "Note names (English)": "A3",
+      "Frequency (Equal tuning at 440 Hz)": 220
+    },
+    {
+      "MIDI note number": "56",
+      "Key number (Organ)": 21,
+      "Key number (Piano)": 36,
+      "Note names (English)": "G#3/Ab3",
+      "Frequency (Equal tuning at 440 Hz)": 207.65
+    },
+    {
+      "MIDI note number": "55",
+      "Key number (Organ)": 20,
+      "Key number (Piano)": 35,
+      "Note names (English)": "G3",
+      "Frequency (Equal tuning at 440 Hz)": 196
+    },
+    {
+      "MIDI note number": "54",
+      "Key number (Organ)": 19,
+      "Key number (Piano)": 34,
+      "Note names (English)": "F#3/Gb3",
+      "Frequency (Equal tuning at 440 Hz)": 185
+    },
+    {
+      "MIDI note number": "53",
+      "Key number (Organ)": 18,
+      "Key number (Piano)": 33,
+      "Note names (English)": "F3",
+      "Frequency (Equal tuning at 440 Hz)": 174.61
+    },
+    {
+      "MIDI note number": "52",
+      "Key number (Organ)": 17,
+      "Key number (Piano)": 32,
+      "Note names (English)": "E3",
+      "Frequency (Equal tuning at 440 Hz)": 164.81
+    },
+    {
+      "MIDI note number": "51",
+      "Key number (Organ)": 16,
+      "Key number (Piano)": 31,
+      "Note names (English)": "D#3/Eb3",
+      "Frequency (Equal tuning at 440 Hz)": 155.56
+    },
+    {
+      "MIDI note number": "50",
+      "Key number (Organ)": 15,
+      "Key number (Piano)": 30,
+      "Note names (English)": "D3",
+      "Frequency (Equal tuning at 440 Hz)": 146.83
+    },
+    {
+      "MIDI note number": "49",
+      "Key number (Organ)": 14,
+      "Key number (Piano)": 29,
+      "Note names (English)": "C#3/Db3",
+      "Frequency (Equal tuning at 440 Hz)": 138.59
+    },
+    {
+      "MIDI note number": "48",
+      "Key number (Organ)": 13,
+      "Key number (Piano)": 28,
+      "Note names (English)": "C3",
+      "Frequency (Equal tuning at 440 Hz)": 130.81
+    },
+    {
+      "MIDI note number": "47",
+      "Key number (Organ)": 12,
+      "Key number (Piano)": 27,
+      "Note names (English)": "B2",
+      "Frequency (Equal tuning at 440 Hz)": 123.47
+    },
+    {
+      "MIDI note number": "46",
+      "Key number (Organ)": 11,
+      "Key number (Piano)": 26,
+      "Note names (English)": "A#2/Bb2",
+      "Frequency (Equal tuning at 440 Hz)": 116.54
+    },
+    {
+      "MIDI note number": "45",
+      "Key number (Organ)": 10,
+      "Key number (Piano)": 25,
+      "Note names (English)": "A2",
+      "Frequency (Equal tuning at 440 Hz)": 110
+    },
+    {
+      "MIDI note number": "44",
+      "Key number (Organ)": 9,
+      "Key number (Piano)": 24,
+      "Note names (English)": "G#2/Ab2",
+      "Frequency (Equal tuning at 440 Hz)": 103.83
+    },
+    {
+      "MIDI note number": "43",
+      "Key number (Organ)": 8,
+      "Key number (Piano)": 23,
+      "Note names (English)": "G2",
+      "Frequency (Equal tuning at 440 Hz)": 98
+    },
+    {
+      "MIDI note number": "42",
+      "Key number (Organ)": 7,
+      "Key number (Piano)": 22,
+      "Note names (English)": "F#2/Gb2",
+      "Frequency (Equal tuning at 440 Hz)": 92.5
+    },
+    {
+      "MIDI note number": "41",
+      "Key number (Organ)": 6,
+      "Key number (Piano)": 21,
+      "Note names (English)": "F2",
+      "Frequency (Equal tuning at 440 Hz)": 87.31
+    },
+    {
+      "MIDI note number": "40",
+      "Key number (Organ)": 5,
+      "Key number (Piano)": 20,
+      "Note names (English)": "E2",
+      "Frequency (Equal tuning at 440 Hz)": 82.41
+    },
+    {
+      "MIDI note number": "39",
+      "Key number (Organ)": 4,
+      "Key number (Piano)": 19,
+      "Note names (English)": "D#2/Eb2",
+      "Frequency (Equal tuning at 440 Hz)": 77.78
+    },
+    {
+      "MIDI note number": "38",
+      "Key number (Organ)": 3,
+      "Key number (Piano)": 18,
+      "Note names (English)": "D2",
+      "Frequency (Equal tuning at 440 Hz)": 73.42
+    },
+    {
+      "MIDI note number": "37",
+      "Key number (Organ)": 2,
+      "Key number (Piano)": 17,
+      "Note names (English)": "C#2/Db2",
+      "Frequency (Equal tuning at 440 Hz)": 69.3
+    },
+    {
+      "MIDI note number": "36",
+      "Key number (Organ)": 1,
+      "Key number (Piano)": 16,
+      "Note names (English)": "C2",
+      "Frequency (Equal tuning at 440 Hz)": 65.41
+    },
+    {
+      "MIDI note number": "35",
+      "Key number (Organ)": null,
+      "Key number (Piano)": 15,
+      "Note names (English)": "B1",
+      "Frequency (Equal tuning at 440 Hz)": 61.74
+    },
+    {
+      "MIDI note number": "34",
+      "Key number (Organ)": null,
+      "Key number (Piano)": 14,
+      "Note names (English)": "A#1/Bb1",
+      "Frequency (Equal tuning at 440 Hz)": 58.27
+    },
+    {
+      "MIDI note number": "33",
+      "Key number (Organ)": null,
+      "Key number (Piano)": 13,
+      "Note names (English)": "A1",
+      "Frequency (Equal tuning at 440 Hz)": 55
+    },
+    {
+      "MIDI note number": "32",
+      "Key number (Organ)": null,
+      "Key number (Piano)": 12,
+      "Note names (English)": "G#1/Ab1",
+      "Frequency (Equal tuning at 440 Hz)": 51.91
+    },
+    {
+      "MIDI note number": "31",
+      "Key number (Organ)": null,
+      "Key number (Piano)": 11,
+      "Note names (English)": "G1",
+      "Frequency (Equal tuning at 440 Hz)": 49
+    },
+    {
+      "MIDI note number": "30",
+      "Key number (Organ)": null,
+      "Key number (Piano)": 10,
+      "Note names (English)": "F#1/Gb1",
+      "Frequency (Equal tuning at 440 Hz)": 46.25
+    },
+    {
+      "MIDI note number": "29",
+      "Key number (Organ)": null,
+      "Key number (Piano)": 9,
+      "Note names (English)": "F1",
+      "Frequency (Equal tuning at 440 Hz)": 43.65
+    },
+    {
+      "MIDI note number": "28",
+      "Key number (Organ)": null,
+      "Key number (Piano)": 8,
+      "Note names (English)": "E1",
+      "Frequency (Equal tuning at 440 Hz)": 41.2
+    },
+    {
+      "MIDI note number": "27",
+      "Key number (Organ)": null,
+      "Key number (Piano)": 7,
+      "Note names (English)": "D#1/Eb1",
+      "Frequency (Equal tuning at 440 Hz)": 38.89
+    },
+    {
+      "MIDI note number": "26",
+      "Key number (Organ)": null,
+      "Key number (Piano)": 6,
+      "Note names (English)": "D1",
+      "Frequency (Equal tuning at 440 Hz)": 36.71
+    },
+    {
+      "MIDI note number": "25",
+      "Key number (Organ)": null,
+      "Key number (Piano)": 5,
+      "Note names (English)": "C#1/Db1",
+      "Frequency (Equal tuning at 440 Hz)": 34.65
+    },
+    {
+      "MIDI note number": "24",
+      "Key number (Organ)": null,
+      "Key number (Piano)": 4,
+      "Note names (English)": "C1",
+      "Frequency (Equal tuning at 440 Hz)": 32.7
+    },
+    {
+      "MIDI note number": "23",
+      "Key number (Organ)": null,
+      "Key number (Piano)": 3,
+      "Note names (English)": "B0",
+      "Frequency (Equal tuning at 440 Hz)": 30.87
+    },
+    {
+      "MIDI note number": "22",
+      "Key number (Organ)": null,
+      "Key number (Piano)": 2,
+      "Note names (English)": "A#0/Bb0",
+      "Frequency (Equal tuning at 440 Hz)": 29.14
+    },
+    {
+      "MIDI note number": "21",
+      "Key number (Organ)": null,
+      "Key number (Piano)": 1,
+      "Note names (English)": "A0",
+      "Frequency (Equal tuning at 440 Hz)": 27.5
+    }
+   ]
