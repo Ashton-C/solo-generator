@@ -20,23 +20,8 @@
     duration: number;
     midinote: number;
     velocity: number;
-  }
+  };
 
-  let containerRef;
-
-  const BPM = data.bpm;
-  const timeSig = data.timeSig;
-  let STAVE_WIDTH = $state(250);
-  let STAVE_HEIGHT = $state(250);
-  let staveIter = 0;
-  let lineIter = 0;
-  // Create a mapping from MIDI note number to note name
-  const midiNoteToName = new Map(
-    midimap.map((item) => [
-      item["MIDI note number"],
-      item["Note names (English)"],
-    ]),
-  );
   const durationToTicks: Record<number, string> = {
     "1920": "w",
     "1440": "hd",
@@ -54,8 +39,31 @@
     "30": "64",
   };
 
-  function convertNoteToVexFlow(noteName: string): string {
+  let containerRef;
+  // Create the notes and project vars
+  const notes: StaveNote[][] = [];
+  let noteBuffer: StaveNote[] = [];
+  const BPM = data.bpm;
+  const timeSig = data.timeSig;
+  let STAVE_WIDTH = $state(250);
+  let STAVE_HEIGHT = $state(300);
+  let staveIter = 0;
+  let lineIter = 0;
+  // Create a mapping from MIDI note number to note name
+  const midiNoteToName = new Map(
+    midimap.map((item) => [
+      item["MIDI note number"],
+      item["Note names (English)"],
+    ]),
+  );
+  
+
+  function convertNoteToVexFlow(noteName: string | undefined): string {
     // Handle cases like "F#7/Gb7" - just take the first one
+    if (noteName === undefined) {
+      console.warn(`Could not parse note name: ${noteName}`);
+      return ""; // Return an empty string or handle error appropriately
+    }
     const primaryNote = noteName.split("/")[0];
 
     // Extract note letter and octave
@@ -81,17 +89,38 @@
         });
       }
       return staveNote;
-    }
-  onMount(() => {
-    function drawNotes(
+  }
+
+  function setupVexFlow() {
+    // const vf = new Factory({
+    //   renderer: { elementId: "containerRef", width: 1000, height: 400 },
+    // });
+    // const renderer = new Renderer("containerRef", Renderer.Backends.SVG);
+    // // Configure the rendering context.
+    // renderer.resize(1000, 1000);
+    // let context = renderer.getContext();
+    // // Create a stave of width 400 at position 10, 40 on the canvas.
+    // const prevStaveMeasure = new Stave(0, 0, STAVE_WIDTH);
+
+    // // Add a clef and time signature.
+    // prevStaveMeasure.addClef("treble").addTimeSignature(timeSig);
+
+    // // Connect it to the rendering context and draw!
+    // prevStaveMeasure.setContext(context).draw();
+  }
+  function drawNotes(
       context: any,
-      notes: StaveNote[],
+      notes: StaveNote[][],
       staveIter: number,
       lineIter: number,
     ) {
       const chunkSize = 4; // Assuming 4 notes per bar/chunk
       for (let i = 0; i < notes.length; i += chunkSize) {
         // Create a new stave for each chunk
+        if (staveIter === 4) {
+          staveIter = 0;
+          lineIter++;
+        }
         const newStaveMeasure = new Stave(
           staveIter * STAVE_WIDTH,
           lineIter * STAVE_HEIGHT,
@@ -99,17 +128,58 @@
         );
         const current_chunk = notes.slice(i, i + chunkSize);
         newStaveMeasure.setContext(context).draw();
-        Formatter.FormatAndDraw(context, newStaveMeasure, current_chunk);
+        Formatter.FormatAndDraw(context, newStaveMeasure, notes[i], { autoBeam: true, alignRests: true});
         staveIter++;
+        
       }
+  }
+  function gatherNotes(noteBuffer: StaveNote[], noteArray: StaveNote[][] = []) {
+    let barDurBuffer = 0;
+    for (let i = 0; i < data.tracks[0].length; i++) {
+      const note: Note = data.tracks[0][i];
+      const noteName: string | undefined = midiNoteToName.get(note.midinote.toString());
+      const vexFlowNote = convertNoteToVexFlow(noteName);
+      const dur = durationToTicks[note.duration];
+      if (dur.includes("d")) {
+        noteBuffer.push(
+          dotted(new StaveNote({ keys: [vexFlowNote], duration: dur })),
+        );
+        barDurBuffer += note.duration;
+        console.log(`Note: ${vexFlowNote}, Duration: ${dur}, noteBuffer:`);
+        console.dir([...noteBuffer])
+      } else {
+        noteBuffer.push(new StaveNote({ keys: [vexFlowNote], duration: dur }));
+        barDurBuffer += note.duration;
+        console.log(`Note: ${vexFlowNote}, Duration: ${dur}, noteBuffer:`);
+        
+      }
+      if (barDurBuffer >= 1900) {
+        noteArray.push(noteBuffer);
+        console.dir([...noteBuffer])
+        noteBuffer.length = 0;
+        barDurBuffer = 0;
+      }
+      // if (noteBuffer.length === 4) {
+      //   noteArray.push(...noteBuffer);
+      //   noteBuffer.length = 0;
+      // }
     }
+    // After the loop, if there are any remaining notes in the buffer (less than 4)
+    // add them to the noteArray as well.
+    if (barDurBuffer <= 1920) {
+        noteArray.push(noteBuffer);
+        console.dir([...noteArray])
+        noteBuffer.length = 0; // Clear the buffer
+    }
+  }
+  onMount(() => {
     const vf = new Factory({
       renderer: { elementId: "containerRef", width: 1000, height: 400 },
     });
     const renderer = new Renderer("containerRef", Renderer.Backends.SVG);
     // Configure the rendering context.
-    renderer.resize(1000, 1000);
-    const context = renderer.getContext();
+    renderer.resize(1200, 1000);
+    let context = renderer.getContext();
     // Create a stave of width 400 at position 10, 40 on the canvas.
     const prevStaveMeasure = new Stave(0, 0, STAVE_WIDTH);
 
@@ -118,36 +188,14 @@
 
     // Connect it to the rendering context and draw!
     prevStaveMeasure.setContext(context).draw();
-
-    // Create the notess
-    const notes2: StaveNote[] = [];
-    function gatherNotes() {
-      for (let i = 0; i < data.tracks[0].length; i++) {
-        const note: Note = data.tracks[0][i];
-        const noteName: string = midiNoteToName.get(note.midinote.toString());
-        const vexFlowNote = convertNoteToVexFlow(noteName);
-        const dur = durationToTicks[note.duration];
-        if (dur.includes("d")) {
-          notes2.push(
-            dotted(new StaveNote({ keys: [vexFlowNote], duration: dur })),
-          );
-        } else {
-          notes2.push(new StaveNote({ keys: [vexFlowNote], duration: dur }));
-        }
-        console.log(`Note: ${vexFlowNote}, Duration: ${dur}`);
-      }
-    }
-    gatherNotes();
-    drawNotes(context, notes2, staveIter, lineIter);
+    setupVexFlow();
+    gatherNotes(noteBuffer, notes);
+    drawNotes(context, notes, staveIter, lineIter);
   });
 
 </script>
 
-<style>
-  .h1 {
-    color: black;
-  }
-</style>
+
 
 <main>
   <div id="containerRef"></div>
