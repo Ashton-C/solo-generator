@@ -110,12 +110,11 @@
   }
   function drawNotes(
       context: any,
-      notes: StaveNote[][],
+      all_notes: StaveNote[][],
       staveIter: number,
       lineIter: number,
     ) {
-      const chunkSize = 4; // Assuming 4 notes per bar/chunk
-      for (let i = 0; i < notes.length; i += chunkSize) {
+      for (let i = 0; i < all_notes.length; i++) {
         // Create a new stave for each chunk
         if (staveIter === 4) {
           staveIter = 0;
@@ -126,9 +125,10 @@
           lineIter * STAVE_HEIGHT,
           STAVE_WIDTH,
         );
-        const current_chunk = notes.slice(i, i + chunkSize);
         newStaveMeasure.setContext(context).draw();
-        Formatter.FormatAndDraw(context, newStaveMeasure, notes[i], { autoBeam: true, alignRests: true});
+        const bar = [...all_notes[i]]
+        // console.dir(bar);
+        Formatter.FormatAndDraw(context, newStaveMeasure, bar, { autoBeam: true, alignRests: true});
         staveIter++;
         
       }
@@ -145,29 +145,23 @@
           dotted(new StaveNote({ keys: [vexFlowNote], duration: dur })),
         );
         barDurBuffer += note.duration;
-        console.log(`Note: ${vexFlowNote}, Duration: ${dur}, noteBuffer:`);
-        console.dir([...noteBuffer])
+        // console.log(`Note: ${vexFlowNote}, Duration: ${dur}, noteBuffer:`);
       } else {
         noteBuffer.push(new StaveNote({ keys: [vexFlowNote], duration: dur }));
         barDurBuffer += note.duration;
-        console.log(`Note: ${vexFlowNote}, Duration: ${dur}, noteBuffer:`);
+        // console.log(`Note: ${vexFlowNote}, Duration: ${dur}, noteBuffer:`);
         
       }
       if (barDurBuffer >= 1900) {
-        noteArray.push(noteBuffer);
-        console.dir([...noteBuffer])
+        noteArray.push([...noteBuffer]);
         noteBuffer.length = 0;
         barDurBuffer = 0;
       }
-      // if (noteBuffer.length === 4) {
-      //   noteArray.push(...noteBuffer);
-      //   noteBuffer.length = 0;
-      // }
     }
     // After the loop, if there are any remaining notes in the buffer (less than 4)
     // add them to the noteArray as well.
     if (barDurBuffer <= 1920) {
-        noteArray.push(noteBuffer);
+        noteArray.push([...noteBuffer]);
         console.dir([...noteArray])
         noteBuffer.length = 0; // Clear the buffer
     }
@@ -190,7 +184,7 @@
     prevStaveMeasure.setContext(context).draw();
     setupVexFlow();
     gatherNotes(noteBuffer, notes);
-    drawNotes(context, notes, staveIter, lineIter);
+    drawNotes(context, [...notes], staveIter, lineIter);
   });
 
 </script>
