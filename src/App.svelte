@@ -11,6 +11,7 @@
     Formatter,
     Voice,
     Renderer,
+    Beam,
   } from "vexflow";
   import { onMount } from "svelte";
 
@@ -75,7 +76,7 @@
 
     const noteLetter = match[1].toLowerCase();
     const accidental = match[2] || "";
-    const octave = match[3];
+    const octave = (parseInt(match[3])+1);  ///// MANUAL FIX HERE, NEED TO CHANGE, just for testing rn.
     return `${noteLetter}${accidental}/${octave}`;
   }
   function dotted(staveNote: StaveNote, noteIndex = -1) {
@@ -110,11 +111,18 @@
   }
   function drawNotes(
       context: any,
+      firstStave: Stave,
       all_notes: StaveNote[][],
       staveIter: number,
       lineIter: number,
     ) {
       for (let i = 0; i < all_notes.length; i++) {
+        if (i === 0) {
+          const bar = [...all_notes[i]]
+          var beams = Beam.generateBeams(bar);
+          Formatter.FormatAndDraw(context, firstStave, bar, { autoBeam: true, alignRests: true});
+          staveIter++;
+        } else {
         // Create a new stave for each chunk
         if (staveIter === 4) {
           staveIter = 0;
@@ -127,10 +135,11 @@
         );
         newStaveMeasure.setContext(context).draw();
         const bar = [...all_notes[i]]
-        // console.dir(bar);
+        var beams = Beam.generateBeams(bar);
+        
         Formatter.FormatAndDraw(context, newStaveMeasure, bar, { autoBeam: true, alignRests: true});
         staveIter++;
-        
+        }
       }
   }
   function gatherNotes(noteBuffer: StaveNote[], noteArray: StaveNote[][] = []) {
@@ -168,23 +177,23 @@
   }
   onMount(() => {
     const vf = new Factory({
-      renderer: { elementId: "containerRef", width: 1000, height: 400 },
+      renderer: { elementId: "containerRef", width: 0, height: 0 },
     });
     const renderer = new Renderer("containerRef", Renderer.Backends.SVG);
     // Configure the rendering context.
-    renderer.resize(1200, 1000);
+    renderer.resize(1200, 1200);
     let context = renderer.getContext();
     // Create a stave of width 400 at position 10, 40 on the canvas.
-    const prevStaveMeasure = new Stave(0, 0, STAVE_WIDTH);
+    const firstStaveMeasure = new Stave(0, 0, STAVE_WIDTH);
 
     // Add a clef and time signature.
-    prevStaveMeasure.addClef("treble").addTimeSignature(timeSig);
+    firstStaveMeasure.addClef("treble").addTimeSignature(timeSig);
 
     // Connect it to the rendering context and draw!
-    prevStaveMeasure.setContext(context).draw();
+    firstStaveMeasure.setContext(context).draw();
     setupVexFlow();
     gatherNotes(noteBuffer, notes);
-    drawNotes(context, [...notes], staveIter, lineIter);
+    drawNotes(context, firstStaveMeasure, [...notes], staveIter, lineIter);
   });
 
 </script>
@@ -193,25 +202,6 @@
 
 <main>
   <div id="containerRef"></div>
-  <h2>
-    <ul>
-      <li>{data.bpm}</li>
-      <li>{data.timeSig}</li>
-      
-    </ul>
-  </h2>
-  
-  <div>
-    <!-- {#each data.tracks[0] as note}
-    <ul>
-        <li>{note.eventType}</li>
-        <li>{note.delta}</li>
-        <li>{note.duration}</li>
-        <li>{midiNoteToName.get(note.midinote.toString())}</li>
-        <li>{note.velocity}</li>
-    </ul>
-    {/each} -->
-  </div>
 </main>
 
 
